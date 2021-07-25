@@ -1,0 +1,10 @@
+<!-- Start your button dashboard here! -->
+
+<body>
+    <h2>{{outputMessage}}</h2>
+    <div class="row" *ngFor="let row of rowFormat">
+        <div class="col-md" *ngFor="let symbol of row">
+            <button (click)="onClick()" class="btn btn-block btn_font" [ngClass]="getColor(symbol)">Click me</button>
+        </div>
+    </div>
+</body>
